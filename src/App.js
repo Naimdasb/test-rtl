@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Fetch } from './Fetch';
 
 function App() {
   const [list, setList] = useState([])
@@ -19,6 +20,7 @@ function App() {
       </label>
       <button onClick={handleAdd}>Add</button>
       {list && list.map(el => <h1 key={el}>{el}</h1>)}
+      <Fetch />
     </div>
   );
 }

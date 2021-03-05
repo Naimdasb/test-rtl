@@ -1,54 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Add 1`] = `
+exports[`Fetches 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="App"
-      >
-        <label
-          for="text"
-        >
-          Input
-          <input
-            name="text"
-            placeholder="Enter text.."
-            type="text"
-            value="Hello There"
-          />
-        </label>
-        <button>
-          Add
-        </button>
-        <h1>
-          Hello There
-        </h1>
+      <div>
+        delectus aut autem
       </div>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="App"
-    >
-      <label
-        for="text"
-      >
-        Input
-        <input
-          name="text"
-          placeholder="Enter text.."
-          type="text"
-          value="Hello There"
-        />
-      </label>
-      <button>
-        Add
-      </button>
-      <h1>
-        Hello There
-      </h1>
+    <div>
+      delectus aut autem
     </div>
   </div>,
   "debug": [Function],

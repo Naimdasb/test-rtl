@@ -15,12 +15,11 @@ const setup = () => {
 }
 
   test('Add', () => {
-    const { input, button, component, dummyText} = setup()
+    const { input, button, dummyText} = setup()
     fireEvent.change(input,{ target: { value: dummyText } })
     expect(input.value).toBe(dummyText)
     fireEvent.click(button)
     expect(screen.getByText(dummyText))
-    expect(component).toMatchSnapshot()
   })  
 
 
