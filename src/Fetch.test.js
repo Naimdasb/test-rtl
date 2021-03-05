@@ -1,15 +1,16 @@
-import { render, waitFor  } from '@testing-library/react';
+import { render, waitFor, fireEvent  } from '@testing-library/react';
 import { Fetch } from './Fetch';
+
 
 const setup = () => {
     const container = render(<Fetch />)
     return { container }
 }
 
-
 test('Fetches', async () => {
     const { container } = setup()
-    await  waitFor(()=> {container.getByText('delectus aut autem')},{timeout: 3000})
-    expect(container).toMatchSnapshot()
-   
+    const button = container.getByRole('button', {name: 'Click Here'})
+    fireEvent.click(button)
+    await  waitFor(()=> {container.getByText('delectus aut autem')})
 })
+
